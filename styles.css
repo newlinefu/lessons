@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+html {
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    overflow: auto;
+}
+
+body {
+    position: relative;
+    background-color: #FFFFFF;
+    padding-bottom: 150px;
+}
+
+.page-content-block {
+    max-width: 1200px;
+}
+
+.site-main, .main-content {
+    max-height: 100%;
+}
+
+.with-aside {
+    display: flex;
+    flex-direction: row;
+}
+
+.with-aside > .page-content-block {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #BDBDBD;
+    text-align: center;
+    outline: transparent;
+    width: 100%;
+    color: #212121;
+    transition: border-color 0.2s ease;
+    border-radius: 4px;
+}
+
+@keyframes slide {
+    from {height: 0;}
+    to {height: 300px;}
+}
+
+/* colors */
+
+.accent {
+    background-color: #536DFE;
+}
+
+.primary {
+    background-color: #673AB7;
+}
+
+.primary-dark {
+    background-color: #512DA8;
+}
+
+/* buttons */
+
+.button.accent-btn {
+    cursor: pointer;
+}
+
+.rhombus-button {
+    display: inline-block;
+    position: relative;
+    padding: 15px 25px;
+    color: white;
+    text-align: center;
+}
+
+.rhombus-button:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: #673AB7;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    -webkit-backface-visibility: hidden;
+}
+
+.rhombus-button.accent-btn:before {
+    background: #536DFE;
+}
+
+/*.rhombus-button:hover:before {*/
+/*    background: #536DFE;*/
+/*}*/
+
+.rhombus-button:before {
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+button {
+    border: none;
+    padding: 5px;
+    min-width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.secondary {
+    background-color: #673AB7;
+}
+
+button.primary {
+    background-color: #536DFE;
+}
+
+.tags-container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 4px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.tag {
+    padding: 3px;
+    border-radius: 4px;
+    background-color: #757575;
+    font-size: 12px;
+}
+
+.progress {
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #212121;
+    height: 24px;
+    position: relative;
+    padding: 2px;
+}
+
+.progress-bar {
+    background-color: #536DFE;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.progress-label {
+    position: absolute;
+    width: 100%;
+    color: #512DA8;
+    text-align: center;
+    bottom: 0;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination > button {
+    min-width: 40px;
+    font-weight: bold;
+}
+
+.pagination__page-label {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #673AB7;
+    font-weight: bold;
+}
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../generic-parts/header/header.css">
+    <link rel="stylesheet" href="../generic-parts/footer/footer.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+<header class="site-header primary">
+
+</header>
+<main class="site-main">
+    <div class="main-content">
+        <form action="" class="sign-in" id="sign-in-form">
+            <div class="sign-in__inputs-wrapper">
+                <div class="field-wrapper" id="sign-in-login">
+                    <input type="text" placeholder="Логин" name="login" class="sign-in__login-input login-input">
+                    <div class="field-error hidden">Некорректный логин</div>
+                </div>
+                <div id="sign-in-email" class="field-wrapper">
+                    <input type="email" placeholder="Почта" name="email" class="sign-in__email-input email-input">
+                    <div class="field-error hidden"></div>
+                    <div class="submit-code-wrapper hidden">
+                        <input type="text" name="email-code" placeholder="Введите код">
+                    </div>
+                </div>
+                <div id="sign-in-telephone" class="field-wrapper">
+                    <input type="tel" placeholder="Телефон" name="telephone"
+                           class="sign-in__telephone-input telephone-input" pattern="+[7-8]-([9]{1}[0-9]{2})-[0-9]{3}-[0-9]{3}">
+                    <div class="field-error hidden"></div>
+                    <div class="submit-code-wrapper hidden">
+                        <input type="text" name="telephone-code" placeholder="Введите код">
+                    </div>
+                </div>
+                <div id="sign-in-password" class="field-wrapper">
+                    <input type="password" placeholder="Пароль" name="password"
+                           class="sign-in__password-input password-input">
+                    <div class="field-error hidden"></div>
+                </div>
+                <div id="sign-in-repeated-password" class="field-wrapper">
+                    <input type="password" placeholder="Повторите Пароль" name="repeated-password"
+                           class="sign-in__repeated-password-input password-input">
+                    <div class="field-error hidden"></div>
+                </div>
+            </div>
+            <div class="sign-in_error hidden" id="form-general-error">
+            </div>
+            <div class="sign-in__btns-container">
+                <div class="sign-in__submit-btn rhombus-button button" id="login-btn">
+                    Войти
+                </div>
+                <div class="sign-in__register-btn rhombus-button button" id="register-btn">
+                    Зарегистрироваться
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer></footer>
+</main>
+
+<script src="../generic-parts/footer/footer.js"></script>
+<script src="../generic-parts/header/header.js"></script>
+<script src="./login-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.courses-list {
+    padding: 10px;
+}
+
+.courses-list__search {
+    display: flex;
+    gap: 10px;
+}
+
+.courses-list__courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.course-list-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 4px;
+}
+
+.course-list-item__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.course-list-item__header-title {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.course-list-item__header-teacher {
+    max-width: 30%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.course-list-item__description {
+    background-color: #FFFFFF;
+    color: #212121;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.course-list-item__task {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.course-list-item__task-title {
+    color: #212121;
+    text-align: center;
+}

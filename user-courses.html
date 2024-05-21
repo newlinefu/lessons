@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="generic-parts/header/header.css">
+    <link rel="stylesheet" href="generic-parts/footer/footer.css">
+    <link rel="stylesheet" href="generic-parts/courses/courses.css">
+</head>
+<body>
+<header class="site-header primary">
+
+</header>
+<main class="site-main with-aside">
+    <aside class="summary-information">
+
+    </aside>
+    <div class="page-content-block">
+        <div class="courses-list">
+            <div class="courses-list__search">
+                <input type="text" placeholder="Какой курс Вы хотите найти?">
+                <button id="courses-list__search-filters-btn" class="secondary">
+                    Фильтры
+                </button>
+                <button id="courses-list__search-submit-btn" class="primary">
+                    Найти
+                </button>
+            </div>
+            <div class="courses-list__filters">
+
+            </div>
+            <div class="courses-list__courses" id="courses-container">
+
+            </div>
+            <div class="pagination" id="pagination-container">
+
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</main>
+
+<script src="./generic-parts/header/header.js"></script>
+<script src="./generic-parts/footer/footer.js"></script>
+<script src="./generic-parts/courses/courses.js"></script>
+</body>
+</html>

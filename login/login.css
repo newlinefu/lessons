@@ -1,0 +1,95 @@
+.sign-in {
+    max-width: 40%;
+    margin: 10% auto 20% auto;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form.login .sign-in__inputs-wrapper {
+    gap: 3px;
+}
+
+form.register .sign-in__inputs-wrapper {
+    gap: 10px;
+}
+
+.sign-in__inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: gap 0.3s ease;
+}
+
+.sign-in__btns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.sign-in__submit-btn,
+.sign-in__register-btn {
+    width: 50%;
+}
+
+.button.dominant {
+    width: 66%;
+}
+
+.button.subordinate {
+    width: 33%;
+    cursor: pointer;
+}
+
+.sign-in_error {
+    color: #F2613F;
+    text-align: center;
+    min-height: 18px;
+    transition: min-height 0.3s ease;
+}
+
+.sign-in_error.hidden {
+    min-height: 0;
+}
+
+.field-wrapper {
+    height: 46px;
+    transition: height 0.3s ease;
+    display: flex;
+}
+
+.field-wrapper.hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.field-error,
+.submit-code-wrapper {
+    padding-left: 10px;
+}
+
+.field-error {
+    color: #F2613F;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: width 0.3s ease;
+    font-size: 14px;
+}
+
+.submit-code-wrapper {
+    width: 40%;
+}
+
+.field-error.hidden,
+.submit-code-wrapper.hidden{
+    width: 0;
+    overflow: hidden;
+    padding-left: 0;
+}
+

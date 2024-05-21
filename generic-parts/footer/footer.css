@@ -1,0 +1,11 @@
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: -150px;
+    height: 150px;
+}
+
+.footer__content {
+    margin: 0 auto;
+    padding: 20px 0;
+}

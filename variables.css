@@ -1,0 +1,132 @@
+* {
+    /* palette */
+
+    --light-color: #FFFFFF;
+    --secondary-light: #BDBDBD;
+    --primary-color: #673AB7;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --primary-dark-color: #512DA8;
+    --accent-color: #536DFE;
+    --error-color: #F2613F;
+
+    /* end of palette */
+
+    /* default colors */
+
+    --default-text-color: var(--light-color);
+    --body-background-color: var(--light-color);
+
+    --accent-block-background: var(--accent-color);
+    --primary-block-background: var(--primary-color);
+    --primary-dark-block-background: var(--primary-dark-color);
+
+    /* end of default colors */
+
+    /* controls colors */
+
+    --pagination-page-label-text-color: var(--primary-color);
+    --input-border-color: var(--secondary-light);
+    --input-text-color: var(--primary-text-color);
+    --input-active-border-color: var(--accent-color);
+
+    --sign-in-button-text-color: var(--light-color);
+    --sign-in-button-background-color: var(--primary-color);
+    --sign-in-button-accent-background-color: var(--accent-color);
+
+    --normal-button-primary-background-color: var(--accent-color);
+    --normal-button-secondary-background-color: var(--primary-color);
+    --normal-button-hover-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    --normal-button-active-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    /* end of controls colors*/
+
+
+    /* tags */
+
+    --tags-container-background-color: var(--light-color);
+    --tags-container-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    --single-tag-background-color: var(--secondary-text-color);
+    --single-tag-hover-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    /* end of tags */
+
+    /* progress bar */
+
+    --progress-bar-background-color: var(--accent-color);
+    --progress-bar-label-color: var(--primary-dark-color);
+    --progress-bar-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    /* end of progress bar */
+
+    /* sign in out */
+
+    --sign-in-error-color: var(--error-color);
+
+    /* end of sign in out */
+
+    /* tasks list */
+
+    --single-task-title-color: var(--primary-text-color);
+    --single-task-item-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    /* end of tasks list */
+
+    /* task page */
+
+    --collapse-header-text-color: var(--light-color);
+    --collapse-content-text-color: var(--primary-text-color);
+
+    --audio-background-color: var(--primary-dark-color);
+
+    --single-file-block-background: var(--accent-color);
+    --single-file-title-text-color: var(--primary-text-color);
+
+    --test-question-border-color: var(--primary-text-color);
+    --test-question-answer-label-color: var(--primary-text-color);
+    --test-question-text-color: var(--primary-text-color);
+
+    --homework-text-color: var(--primary-text-color);
+    --homework-file-input-label-text: var(--primary-text-color);
+
+    /* end of task page */
+
+    /* courses list */
+
+    --course-list-item-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    --course-list-item-description-background-color: var(--light-color);
+    --course-list-item-description-text-color: var(--primary-text-color);
+
+    --course-list-item-task-block-background-color: var(--light-color);
+    --course-list-item-task-title-color: var(--primary-text-color);
+
+    /* end of courses list */
+
+    /* course page */
+
+    --course-page-general-title-text-color: var(--primary-dark-color);
+    --course-page-description-text-color: var(--primary-text-color);
+
+    /* end of course page */
+
+    /* header */
+
+    --header-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    --header-link-control-hover-background-color: var(--accent-color);
+    --header-link-control-divider-color: var(--light-color);
+
+    --summary-information-item-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    --summary-item-content-background-color: var(--light-color);
+    --summary-item-content-text-color: var(--primary-text-color);
+
+    --summary-item-inner-content-divider-color: var(--primary-text-color);
+
+    /* end of header */
+
+    /* footer */
+
+    --footer-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    /* end of footer */
+}
+

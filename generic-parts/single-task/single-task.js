@@ -3,10 +3,10 @@ const addClicksListeners = () => {
 
     taskContent.addEventListener('click', (e) => {
         const target = e.target;
-        const header = target.closest('.collapsed-content');
+        const header = target.closest('.collapse-content__header');
         if (header) {
-            const content = header.querySelector('.collapse-content__content');
-            console.log(content);
+            const container = header.closest('.collapsed-content')
+            const content = container.querySelector('.collapse-content__content');
             if (content) {
                 content.classList.toggle('collapsed');
             }

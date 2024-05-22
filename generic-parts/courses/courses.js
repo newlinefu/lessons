@@ -137,9 +137,9 @@ const createUserCourse = (course) => {
                 ${tagsHtmlContent}
             </div>
             <div class="course-list-item__task">
-                <p class="course-list-item__task-title">
+                <a class="course-list-item__task-title" href="/lessons/generic-parts/single-task/single-task.html">
                     ${course.lastTask.title}
-                </p>
+                </a>
                 <div class="progress">
                     <div class="progress-bar" style="width: ${course.lastTask.progress}%">
                         

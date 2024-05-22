@@ -41,19 +41,19 @@ const createTasksPagination = () => {
 
 const createHtmlSingleTask = (task) => {
     return `
-        <div class="course-single-task">
-            <p class="course-single-task__title">
-                ${task.title}
-            </p>
-            <div class="progress">
-                <div class="progress-bar" style="width: ${task.progress}%">
-
-                </div>
-                <div class="progress-label">
-                    Выполнено: ${task.progress} %
+        <a href="/lessons/generic-parts/single-task/single-task.html">
+            <div class="course-single-task">
+                <h3 class="course-single-task__title">${task.title}</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: ${task.progress}%">
+    
+                    </div>
+                    <div class="progress-label">
+                        Выполнено: ${task.progress} %
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     `
 }
 

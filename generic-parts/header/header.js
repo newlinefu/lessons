@@ -46,33 +46,33 @@ const createMainHeader = () => {
     const headerRoot = document.querySelector('header');
     const headerContentWithoutAuthorization = `
         <div class="site-header__controls header-left-controls">
-            <div class="site-header__single-control link-header-control accent">
-                <a href="" class="link">Все курсы</a>
+            <div class="site-header__single-control link-header-control">
+                <a href="/lessons/all-courses.html" class="link">Все курсы</a>
             </div>
         </div>
         <div class="site-header__controls header-right-controls">
-            <div class="site-header__single-control link-header-control accent">
+            <div class="site-header__single-control link-header-control">
                 <a href="/lessons/login/login.html" class="link">Вход / Регистрация</a>
             </div>
         </div>
     `;
     const headerContentAuthorized = `
         <div class="site-header__controls header-left-controls">
-            <div class="site-header__single-control link-header-control accent">
+            <div class="site-header__single-control link-header-control">
                 <div class="site-header__menu-btn" id="header-menu-btn">
-                    <img src="/lessons/content/icons8-меню.svg" alt="Меню" width="20" height="20">
+                    <img src="/lessons/content/icons8-menu.svg" alt="Меню" width="20" height="20">
                 </div>
             </div>
-            <div class="site-header__single-control link-header-control accent">
+            <div class="site-header__single-control link-header-control">
                 <a href="/lessons/all-courses.html" class="link">Все курсы</a>
             </div>
-            <div class="site-header__single-control link-header-control accent">
+            <div class="site-header__single-control link-header-control">
                 <a href="/lessons/user-courses.html" class="link">Мои курсы</a>
             </div>
         </div>
         <div class="site-header__controls header-right-controls">
-            <div class="site-header__single-control link-header-control accent">
-                <a href="/lessons/profile.html" class="link">Мой профиль</a>
+            <div class="site-header__single-control link-header-control">
+                <a href="/lessons/profile/profile.html" class="link">Мой профиль</a>
             </div>
         </div>
     `;
@@ -85,7 +85,7 @@ const createLoginHeader = () => {
     const headerRoot = document.querySelector('header');
     headerRoot.innerHTML = `
         <div class="site-header__controls header-left-controls">
-            <div class="site-header__single-control link-header-control accent">
+            <div class="site-header__single-control link-header-control">
                 <a href="/lessons/all-courses.html" class="link">Вернуться ко всем курсам</a>
             </div>
         </div>
@@ -98,28 +98,20 @@ const createHeader = () => {
     const href = window.location.href;
     if (href.includes('login')) {
         createLoginHeader()
-        return;
-    }
-    if (href.includes('all-courses')) {
-        createMainHeader()
-        return;
-    }
-    if (href.includes('user-courses')) {
-        createMainHeader()
-    }
-    if (href.includes('single-course')) {
-        createMainHeader()
-    }
-
-    if (href.includes('single-task')) {
+    } else {
         createMainHeader()
     }
 }
 
 const onMenuClick = () => {
     const aside = document.querySelector('aside');
+    const headerMenuBtn = document.getElementById('header-menu-btn');
+    const menuWrapper = headerMenuBtn.closest('.link-header-control')
 
     aside.classList.toggle('opened');
+    if (menuWrapper) {
+        menuWrapper.classList.toggle('accent')
+    }
 }
 
 const addHeaderListeners = () => {

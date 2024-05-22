@@ -13,16 +13,17 @@
 
 .single-course-general-information__text-information .tags-container {
     padding-left: 0;
+    box-shadow: none;
 }
 
 .single-course-general-information__title {
-    color: #512DA8;
+    color: var(--course-page-general-title-text-color);
     font-size: 22px;
     text-align: center;
 }
 
 .single-course-general-information__description {
-    color: #212121;
+    color: var(--course-page-description-text-color);
 }
 
 .single-course-general-information__teacher-information {
@@ -40,5 +41,24 @@
 .single-course-general-information__teacher-information-name {
     color: #212121;
     text-align: center;
-    font-size: 18px;
+}
+
+
+@media screen and (max-width: 680px) {
+    .single-course-general-information {
+        flex-direction: column;
+    }
+
+    .single-course-general-information__text-information,
+    .single-course-general-information__teacher-information {
+        width: 100%;
+    }
+
+    .single-course-general-information__teacher-information-photo {
+        text-align: center;
+    }
+
+    .single-course-general-information__teacher-information-name {
+        text-align: center;
+    }
 }

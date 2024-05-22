@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Задание</title>
+    <title>ООП: Введение</title>
+    <link rel="stylesheet" href="../../variables.css">
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
@@ -77,7 +78,7 @@
 
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
-                    <h2>Дополнительные материалы к занятию</h2>
+                    <h2 class="collapse-content__header-text">Дополнительные материалы к занятию</h2>
                 </div>
                 <div class="collapse-content__content collapsed">
                     <div class="files-container">
@@ -103,28 +104,28 @@
 
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
-                    Проверь свои знания по материалу
+                    <h2>Проверь свои знания по материалу</h2>
                 </div>
                 <div class="collapse-content__content">
                     <form action="" class="task-test">
                         <fieldset id="q1" name="q1" class="task-test__question">
-                            <h3 style="color: black" class="task-test__question-text">
+                            <h3 class="task-test__question-text">
                                 Question
                             </h3>
 
-                            <div>
-                                <input type="radio" id="q1-ans-1" name="q1-ans" value="q1-ans-1" checked/>
-                                <label for="q1-ans-1">Ответ 1</label>
+                            <div class="task-test__question-answer">
+                                <input type="radio" id="q1-ans-1" name="q1-ans" value="q1-ans-1"/>
+                                <label for="q1-ans-1" class="task-test__question-answer-label">Ответ 1</label>
                             </div>
 
-                            <div>
+                            <div class="task-test__question-answer">
                                 <input type="radio" id="q1-ans-2" name="q1-ans" value="q1-ans-2"/>
-                                <label for="q1-ans-2">Ответ 2</label>
+                                <label for="q1-ans-2" class="task-test__question-answer-label">Ответ 2</label>
                             </div>
 
-                            <div>
+                            <div class="task-test__question-answer">
                                 <input type="radio" id="q1-ans-3" name="q1-ans" value="q1-ans-3"/>
-                                <label for="q1-ans-3">Ответ 3</label>
+                                <label for="q1-ans-3" class="task-test__question-answer-label">Ответ 3</label>
                             </div>
                         </fieldset>
                         <fieldset id="q2" name="q2" class="task-test__question">
@@ -132,23 +133,23 @@
                                 Question
                             </h3>
 
-                            <div>
-                                <input type="radio" name="q2-ans" id="q2-ans-1" value="q2-ans-1" checked/>
-                                <label for="q2-ans-1">Ответ 1</label>
+                            <div class="task-test__question-answer">
+                                <input type="radio" name="q2-ans" id="q2-ans-1" value="q2-ans-1"/>
+                                <label for="q2-ans-1" class="task-test__question-answer-label">Ответ 1</label>
                             </div>
 
-                            <div>
+                            <div class="task-test__question-answer">
                                 <input type="radio" name="q2-ans" id="q2-ans-2" value="q2-ans-2"/>
-                                <label for="q2-ans-2">Ответ 2</label>
+                                <label for="q2-ans-2" class="task-test__question-answer-label">Ответ 2</label>
                             </div>
 
-                            <div>
+                            <div class="task-test__question-answer">
                                 <input type="radio" name="q2-ans" id="q2-ans-3" value="q2-ans-3"/>
-                                <label for="q2-ans-3">Ответ 3</label>
+                                <label for="q2-ans-3" class="task-test__question-answer-label">Ответ 3</label>
                             </div>
                         </fieldset>
-                        <div>
-                            <button>
+                        <div class="submit-test-btn__wrapper">
+                            <button class="submit-test-btn primary">
                                 Отправить
                             </button>
                         </div>
@@ -158,10 +159,10 @@
 
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
-                    Задание к занятию
+                    <h2>Задание к занятию</h2>
                 </div>
                 <div class="collapse-content__content collapsed">
-                    <p>
+                    <p class="homework-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa dolores eos est
                         exercitationem
                         libero maxime natus necessitatibus odit officia optio praesentium quidem quisquam ratione
@@ -169,13 +170,14 @@
                         tempora
                         tenetur voluptatem, voluptatibus.
                     </p>
-                    <div>
-                        <label>
+                    <div class="homework-file-upload">
+                        <label for="homework-file-input" class="homework-input-label">
                             Загрузить файлы:
-                            <input type="file" name="foo" accept=
-                                    "application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
-    text/plain, application/pdf">
                         </label>
+                        <input type="file" name="foo" id="homework-file-input" accept=
+                                "application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+    text/plain, application/pdf">
+
                     </div>
                 </div>
             </section>

@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     height: 50px;
+    position: sticky;
+    top: 0;
+    box-shadow: var(--header-box-shadow);
 }
 
 .site-header__controls {
@@ -24,6 +27,13 @@
 
 .link-header-control {
     height: 100%;
+    position: relative;
+    padding: 0 20px;
+}
+
+.link-header-control:hover {
+    background-color: var(--header-link-control-hover-background-color);
+    transition: background-color 0.3s ease;
 }
 
 .link-header-control > a {
@@ -34,23 +44,46 @@
     padding: 10px;
 }
 
+
+.header-left-controls > .link-header-control:after {
+    content:"";
+    background: var(--header-link-control-divider-color);
+    position: absolute;
+    right: 0;
+    width: 1px;
+    bottom: 8px;
+    height: calc(100% - 16px);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.link-header-control:hover:after,
+.link-header-control.accent:after {
+    opacity: 0;
+}
+
 .site-header__menu-btn {
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
 .summary-information {
     width: 0;
-    transition: width 0.2s ease;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    max-height: 0;
+}
+
+.summary-information .tags-container {
+    box-shadow: none;
 }
 
 .summary-information.opened {
     width: 400px;
     gap: 10px;
     padding: 10px;
+    max-height: inherit;
 }
 
 .with-aside > .page-content-block {
@@ -63,6 +96,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    box-shadow: var(--summary-information-item-box-shadow);
 }
 
 .summary-information__item-title {
@@ -73,8 +107,8 @@
 
 .summary-information__item-content,
 .summary-information__item-content > p {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--summary-item-content-background-color);
+    color: var(--summary-item-content-text-color);
     padding: 5px;
 }
 
@@ -83,7 +117,7 @@
 }
 
 .divided {
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid var(--summary-item-inner-content-divider-color);
 }
 
 .tags-container {

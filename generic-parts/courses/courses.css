@@ -7,6 +7,11 @@
     gap: 10px;
 }
 
+.courses-list__search-controls {
+    display: flex;
+    gap: 10px;
+}
+
 .courses-list__courses {
     display: flex;
     flex-direction: column;
@@ -20,6 +25,7 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 4px;
+    box-shadow: var(--course-list-item-box-shadow);
 }
 
 .course-list-item__header {
@@ -35,25 +41,28 @@
     font-size: 18px;
 }
 
+.course-list-item__header-title > a {
+    display: block;
+    width: 100%;
+}
+
 .course-list-item__header-teacher {
     max-width: 30%;
-    font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
-
-
 .course-list-item__description {
-    background-color: #FFFFFF;
-    color: #212121;
+    background-color: var(--course-list-item-description-background-color);
+    color: var(--course-list-item-description-text-color);
     padding: 10px;
     border-radius: 4px;
 }
 
 .course-list-item__task {
-    background-color: #FFFFFF;
+    background-color: var(--course-list-item-task-block-background-color);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -62,6 +71,25 @@
 }
 
 .course-list-item__task-title {
-    color: #212121;
+    color: var(--course-list-item-task-title-color);
     text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    .courses-list__search {
+        flex-direction: column;
+    }
+    .courses-list__search-controls {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .course-list-item__header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .course-list-item__header-teacher {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: row;
+    }
 }

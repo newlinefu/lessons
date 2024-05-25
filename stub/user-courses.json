@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "name": "Что-то про 1С",
+    "teacher": {
+      "id": "1",
+      "name": "Константинов М. К."
+    },
+    "tags": [
+      "Бухгалтерия",
+      "Менеджмент"
+    ],
+    "img": "/lessons/static/course-img.jpg",
+    "lastTask": {
+      "title": "Настройка окружения",
+      "progress": 70
+    }
+  },
+  {
+    "id": "2",
+    "name": "C# для чайников",
+    "teacher": {
+      "id": "2",
+      "name": "Симонов А. М."
+    },
+    "img": "/lessons/static/course-img.jpg",
+    "tags": [
+      "Программирование",
+      "ООП"
+    ],
+    "lastTask": {
+      "title": "Методы и функции",
+      "progress": 10
+    }
+  }
+]

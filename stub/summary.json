@@ -1,0 +1,34 @@
+[
+  {
+    "courseId": "1",
+    "courseName": "Java: Beginner",
+    "type": "announcement",
+    "announcement": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "courseId": "2",
+    "courseName": "C# для чайников",
+    "type": "test",
+    "date": "30 мая 2024 г."
+  },
+  {
+    "courseId": "3",
+    "courseName": "Что-то про 1С",
+    "type": "reminder",
+    "tasks": [
+      {
+        "title": "Введение",
+        "tags": [
+          "Бухгалтерия",
+          "Менеджмент"
+        ]
+      },
+      {
+        "title": "Настройка окружения",
+        "tags": [
+          "1С"
+        ]
+      }
+    ]
+  }
+]

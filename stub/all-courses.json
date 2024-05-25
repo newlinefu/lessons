@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1",
+    "name": "Что-то про 1С",
+    "teacher": {
+      "id": "1",
+      "name": "Константинов М. К."
+    },
+    "img": "/lessons/static/course-img.jpg",
+    "tags": [
+      "Бухгалтерия",
+      "Менеджмент"
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "id": "2",
+    "name": "C# для чайников",
+    "img": "/lessons/static/course-img.jpg",
+    "teacher": {
+      "id": "2",
+      "name": "Симонов А. М."
+    },
+    "tags": [
+      "Программирование",
+      "ООП"
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "id": "3",
+    "name": "Java: Beginner",
+    "img": "/lessons/static/course-img.jpg",
+    "teacher": {
+      "id": "3",
+      "name": "Максимов Е. К."
+    },
+    "tags": [
+      "Программирование",
+      "ООП",
+      "Стуктуры данных"
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  }
+]

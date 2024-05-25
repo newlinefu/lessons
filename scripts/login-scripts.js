@@ -1,3 +1,5 @@
+const ALL_COURSES_PATH_LOGIN = '/lessons/pages/all-courses.html'
+
 const GENERAL_ERROR_TEXT = 'Что-то пошло не так, повторите попытку позднее.';
 const REPEATED_PASSWORD_ERROR_TEXT = 'Пароли должны совпадать';
 const PAGE_BEHAVIOUR = 'type';
@@ -324,7 +326,7 @@ const formSubmit = (e) => {
         }
         login(formData)
             .then(() => {
-                document.location.href = '/lessons/all-courses.html'
+                document.location.href = ALL_COURSES_PATH_LOGIN
             })
             .catch(() => displayGeneralError())
     }
@@ -338,7 +340,7 @@ const formSubmit = (e) => {
         if (acceptId) {
             register(formData)
                 .then(() => {
-                    document.location.href = '/all-courses.html'
+                    document.location.href = ALL_COURSES_PATH_LOGIN
                 })
                 .catch(() => displayGeneralError())
         } else {

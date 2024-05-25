@@ -1,80 +1,22 @@
-/*
-    STUB DATA
- */
-
-const COURSES_STUB = {
-    data: [
-        {
-            id: '1',
-            name: 'Что-то про 1С',
-            teacher: {
-                id: '1',
-                name: 'Константинов М. К.'
-            },
-            tags: ['Бухгалтерия', 'Менеджмент'],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!'
-        },
-        {
-            id: '2',
-            name: 'C# для чайников',
-            teacher: {
-                id: '2',
-                name: 'Симонов А. М.'
-            },
-            tags: ['Программирование', 'ООП'],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!'
-        },
-        {
-            id: '3',
-            name: 'Java: Beginner',
-            teacher: {
-                id: '3',
-                name: 'Максимов Е. К.'
-            },
-            tags: ['Программирование', 'ООП', 'Стуктуры данных'],
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!'
-        }
-    ]
-}
-
-const USER_COURSES_STUB = {
-    data: [
-        {
-            id: '1',
-            name: 'Что-то про 1С',
-            teacher: {
-                id: '1',
-                name: 'Константинов М. К.'
-            },
-            tags: ['Бухгалтерия', 'Менеджмент'],
-            lastTask: {
-                title: 'Настройка окружения',
-                progress: 70
-            }
-        },
-        {
-            id: '2',
-            name: 'C# для чайников',
-            teacher: {
-                id: '2',
-                name: 'Симонов А. М.'
-            },
-            tags: ['Программирование', 'ООП'],
-            lastTask: {
-                title: 'Методы и функции',
-                progress: 10
-            }
-        },
-    ]
-}
-
-/*
-    STUB DATA END
- */
+const PATH_TO_STUB = '/lessons/stub';
+const COURSE_PATH = '/lessons/pages/course.html';
+const TASK_PATH = '/lessons/pages/lesson.html'
 
 const PAGE_COURSES_TYPE = {
     USER: 'user-courses',
     COMMON: 'common-courses'
+}
+
+const getUserCourses = (search, filters, page, limit) => {
+    return fetch(`${PATH_TO_STUB}/user-courses.json`)
+        .then(response => response.json())
+        .then(data => data);
+}
+
+const getAllCourses = (search, filters, page, limit) => {
+    return fetch(`${PATH_TO_STUB}/all-courses.json`)
+        .then(response => response.json())
+        .then(data => data);
 }
 
 const definePageCoursesType = () => {
@@ -87,18 +29,6 @@ const definePageCoursesType = () => {
         return PAGE_COURSES_TYPE.USER
     }
     return Promise.resolve([])
-}
-
-const getUserCourses = (search, filters, page, limit) => {
-    return new Promise((res, rej) => {
-        setTimeout(() => res(USER_COURSES_STUB), 500)
-    }).then(response => response.data);
-}
-
-const getAllCourses = (search, filters, page, limit) => {
-    return new Promise((res, rej) => {
-        setTimeout(() => res(COURSES_STUB), 500)
-    }).then(response => response.data);
 }
 
 const getCourses = (type, search = '', filters = {}, page = 1, limit = 5) => {
@@ -127,7 +57,7 @@ const createUserCourse = (course) => {
         <div class="course-list-item primary">
             <div class="course-list-item__header">
                 <div class="course-list-item__header-title">
-                    <a href="/lessons/generic-parts/single-course/single-course.html?courseId=${course.id}">${course.name}</a>
+                    <a href="${COURSE_PATH}?courseId=${course.id}">${course.name}</a>
                 </div>
                 <div class="course-list-item__header-teacher">
                     ${course.teacher.name}
@@ -137,7 +67,7 @@ const createUserCourse = (course) => {
                 ${tagsHtmlContent}
             </div>
             <div class="course-list-item__task">
-                <a class="course-list-item__task-title" href="/lessons/generic-parts/single-task/single-task.html">
+                <a class="course-list-item__task-title" href="${TASK_PATH}">
                     ${course.lastTask.title}
                 </a>
                 <div class="progress">
@@ -160,7 +90,7 @@ const createCommonCourse = (course) => {
         <div class="course-list-item primary">
             <div class="course-list-item__header">
                 <div class="course-list-item__header-title">
-                    <a href="/lessons/generic-parts/single-course/single-course.html?courseId=${course.id}">${course.name}</a>
+                    <a href="${COURSE_PATH}?courseId=${course.id}">${course.name}</a>
                 </div>
                 <div class="course-list-item__header-teacher">
                     ${course.teacher.name}

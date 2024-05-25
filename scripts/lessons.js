@@ -1,28 +1,4 @@
-/*
-    STUB DATA
- */
-
-const TASKS_LIST_STUB = {
-    data: [
-        {
-            title: 'Методы и функции',
-            progress: 50
-        },
-        {
-            title: 'Классы',
-            progress: 10
-        },
-        {
-            title: 'Наследование',
-            progress: 0
-        }
-    ]
-}
-
-/*
-    END OF STUB DATA
- */
-
+const LESSON_PATH = '/lessons/pages/lesson.html'
 
 const createTasksPagination = () => {
     const paginationContainer = document.getElementById('pagination-container');
@@ -41,7 +17,7 @@ const createTasksPagination = () => {
 
 const createHtmlSingleTask = (task) => {
     return `
-        <a href="/lessons/generic-parts/single-task/single-task.html">
+        <a href="${LESSON_PATH}">
             <div class="course-single-task">
                 <h3 class="course-single-task__title">${task.title}</h3>
                 <div class="progress">
@@ -58,9 +34,9 @@ const createHtmlSingleTask = (task) => {
 }
 
 const getTasks = (page, limit) => {
-    return new Promise((res, rej) => {
-        setTimeout(() => res(TASKS_LIST_STUB), 500)
-    }).then(response => response.data);
+    return fetch('/lessons/stub/lessons.json')
+        .then(response => response.json())
+        .then(data => data);
 }
 
 const createTasksList = () => {

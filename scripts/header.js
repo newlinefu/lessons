@@ -1,42 +1,10 @@
-/*
-    STUB DATA
- */
+const ALL_COURSES_PATH = '/lessons/pages/all-courses.html';
+const LOGIN_PATH = '/lessons/pages/login.html';
+const PROFILE_PATH = '/lessons/pages/profile.html';
+const USER_COURSES_PATH = '/lessons/pages/user-courses.html';
 
-const SUMMARY_INFORMATION_STUB = {
-    data: [
-        {
-            courseId: '1',
-            courseName: 'Java: Beginner',
-            type: 'announcement',
-            announcement: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!'
-        },
-        {
-            courseId: '2',
-            courseName: 'C# для чайников',
-            type: 'test',
-            date: '30 мая 2024 г.'
-        },
-        {
-            courseId: '3',
-            courseName: 'Что-то про 1С',
-            type: 'reminder',
-            tasks: [
-                {
-                    title: 'Введение',
-                    tags: ['Бухгалтерия', 'Менеджмент']
-                },
-                {
-                    title: 'Настройка окружения',
-                    tags: ['1С']
-                }
-            ]
-        }
-    ]
-}
+const MENU_ICON_PATH = '/lessons/static/burger-icon.svg';
 
-/*
-    END OF STUB DATA
- */
 window.getCookie = function (name) {
     const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
     if (match) return match[2];
@@ -47,12 +15,12 @@ const createMainHeader = () => {
     const headerContentWithoutAuthorization = `
         <div class="site-header__controls header-left-controls">
             <div class="site-header__single-control link-header-control">
-                <a href="/lessons/all-courses.html" class="link">Все курсы</a>
+                <a href="${ALL_COURSES_PATH}" class="link">Все курсы</a>
             </div>
         </div>
         <div class="site-header__controls header-right-controls">
             <div class="site-header__single-control link-header-control">
-                <a href="/lessons/login/login.html" class="link">Вход / Регистрация</a>
+                <a href="${LOGIN_PATH}" class="link">Вход / Регистрация</a>
             </div>
         </div>
     `;
@@ -60,19 +28,19 @@ const createMainHeader = () => {
         <div class="site-header__controls header-left-controls">
             <div class="site-header__single-control link-header-control">
                 <div class="site-header__menu-btn" id="header-menu-btn">
-                    <img src="/lessons/content/icons8-menu.svg" alt="Меню" width="20" height="20">
+                    <img src="${MENU_ICON_PATH}" alt="Меню" width="20" height="20">
                 </div>
             </div>
             <div class="site-header__single-control link-header-control">
-                <a href="/lessons/all-courses.html" class="link">Все курсы</a>
+                <a href="${ALL_COURSES_PATH}" class="link">Все курсы</a>
             </div>
             <div class="site-header__single-control link-header-control">
-                <a href="/lessons/user-courses.html" class="link">Мои курсы</a>
+                <a href="${USER_COURSES_PATH}" class="link">Мои курсы</a>
             </div>
         </div>
         <div class="site-header__controls header-right-controls">
             <div class="site-header__single-control link-header-control">
-                <a href="/lessons/profile/profile.html" class="link">Мой профиль</a>
+                <a href="${PROFILE_PATH}" class="link">Мой профиль</a>
             </div>
         </div>
     `;
@@ -86,7 +54,7 @@ const createLoginHeader = () => {
     headerRoot.innerHTML = `
         <div class="site-header__controls header-left-controls">
             <div class="site-header__single-control link-header-control">
-                <a href="/lessons/all-courses.html" class="link">Вернуться ко всем курсам</a>
+                <a href="${ALL_COURSES_PATH}" class="link">Вернуться ко всем курсам</a>
             </div>
         </div>
         <div class="site-header__controls header-right-controls">
@@ -124,9 +92,9 @@ const addHeaderListeners = () => {
 const fetchAsideContent = () => {
     const accessToken = window.getCookie('access-token');
     if (accessToken) {
-        return new Promise((res, rej) => {
-            setTimeout(() => res(SUMMARY_INFORMATION_STUB))
-        }).then(val => val.data)
+        return fetch('/lessons/stub/summary.json')
+            .then(response => response.json())
+            .then(data => data);
     }
     return Promise.resolve(null)
 }

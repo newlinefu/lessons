@@ -20,7 +20,10 @@ const createMainHeader = () => {
         </div>
         <div class="site-header__controls header-right-controls">
             <div class="site-header__single-control link-header-control">
-                <a href="${LOGIN_PATH}" class="link">Вход / Регистрация</a>
+                <a href="${LOGIN_PATH}" class="link">Вход</a>
+            </div>
+            <div class="site-header__single-control link-header-control">
+                <a href="${LOGIN_PATH}?type=register" class="link">Зарегистрироваться</a>
             </div>
         </div>
     `;

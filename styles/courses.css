@@ -26,6 +26,12 @@
     gap: 10px;
     border-radius: 4px;
     box-shadow: var(--course-list-item-box-shadow);
+    background-color: var(--course-list-item-background-color);
+    transition: background-color 0.3s ease;
+}
+
+.course-list-item:hover {
+    background-color: var(--course-list-item-hover-background-color);
 }
 
 .course-list-item__header {

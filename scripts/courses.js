@@ -54,32 +54,34 @@ const createUserCourse = (course) => {
     const tagsHtmlContent = createTagsHtmlContent(course.tags);
 
     return `
-        <div class="course-list-item primary">
-            <div class="course-list-item__header">
-                <div class="course-list-item__header-title">
-                    <a href="${COURSE_PATH}?courseId=${course.id}">${course.name}</a>
-                </div>
-                <div class="course-list-item__header-teacher">
-                    ${course.teacher.name}
-                </div>
-            </div>
-            <div class="tags-container">
-                ${tagsHtmlContent}
-            </div>
-            <div class="course-list-item__task">
-                <a class="course-list-item__task-title" href="${TASK_PATH}">
-                    ${course.lastTask.title}
-                </a>
-                <div class="progress">
-                    <div class="progress-bar" style="width: ${course.lastTask.progress}%">
-                        
+        <a href="${COURSE_PATH}?courseId=${course.id}">
+            <div class="course-list-item">
+                <div class="course-list-item__header">
+                    <div class="course-list-item__header-title">
+                        ${course.name}
                     </div>
-                    <div class="progress-label">
-                        Выполнено: ${course.lastTask.progress} %
+                    <div class="course-list-item__header-teacher">
+                        ${course.teacher.name}
                     </div>
                 </div>
+                <div class="tags-container">
+                    ${tagsHtmlContent}
+                </div>
+                <div class="course-list-item__task">
+                    <a class="course-list-item__task-title" href="${TASK_PATH}">
+                        ${course.lastTask.title}
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: ${course.lastTask.progress}%">
+                            
+                        </div>
+                        <div class="progress-label">
+                            Выполнено: ${course.lastTask.progress} %
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </a>
     `;
 }
 
@@ -87,22 +89,24 @@ const createCommonCourse = (course) => {
     const tagsHtmlContent = createTagsHtmlContent(course.tags);
 
     return `
-        <div class="course-list-item primary">
-            <div class="course-list-item__header">
-                <div class="course-list-item__header-title">
-                    <a href="${COURSE_PATH}?courseId=${course.id}">${course.name}</a>
+        <a href="${COURSE_PATH}?courseId=${course.id}">
+            <div class="course-list-item">
+                <div class="course-list-item__header">
+                    <div class="course-list-item__header-title">
+                        ${course.name}
+                    </div>
+                    <div class="course-list-item__header-teacher">
+                        ${course.teacher.name}
+                    </div>
                 </div>
-                <div class="course-list-item__header-teacher">
-                    ${course.teacher.name}
+                <div class="tags-container">
+                    ${tagsHtmlContent};
+                </div>
+                <div class="course-list-item__description">
+                    ${course.description}
                 </div>
             </div>
-            <div class="tags-container">
-                ${tagsHtmlContent};
-            </div>
-            <div class="course-list-item__description">
-                ${course.description}
-            </div>
-        </div>
+        </a>
     `;
 }
 

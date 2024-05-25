@@ -211,6 +211,14 @@ const displayGeneralError = (errorText) => {
     error.innerText = errorText || GENERAL_ERROR_TEXT;
 }
 
+const highlightFieldWithError = (fieldWrapperId) => {
+    document.querySelector('#' + fieldWrapperId + ' > input').classList.add('error');
+}
+
+const clearFieldWithError = (fieldWrapperId) => {
+    document.querySelector('#' + fieldWrapperId + ' > input').classList.remove('error');
+}
+
 const hideGeneralError = () => {
     const error = document.getElementById('form-general-error');
     error.innerText = '';
@@ -240,27 +248,41 @@ const hideLoginError = () => {
 
 const validateFields = (pageType, formData) => {
     let isFormDataFilled = false;
+    let isTelephoneValid = true;
+    let isEmailValid = true;
     if (pageType === PAGE_TYPES.LOGIN) {
         isFormDataFilled = formData.get(FORM_FIELDS.LOGIN)
             && formData.get(FORM_FIELDS.PASSWORD)
     }
     if (pageType === PAGE_TYPES.REGISTER) {
+        const telephoneValue = formData.get(FORM_FIELDS.TELEPHONE)
+        const emailValue = formData.get(FORM_FIELDS.EMAIL)
+
+        const telephoneCodeValue = formData.get(FORM_FIELDS.TELEPHONE_CODE)
+        const emailCodeValue = formData.get(FORM_FIELDS.EMAIL_CODE)
+
         const acceptId = getAcceptId();
+
         if (acceptId) {
-            isFormDataFilled = formData.get(FORM_FIELDS.TELEPHONE_CODE) || formData.get(FORM_FIELDS.EMAIL_CODE);
+            isFormDataFilled = emailCodeValue || telephoneCodeValue;
         } else {
             isFormDataFilled = formData.get(FORM_FIELDS.LOGIN)
-                && (formData.get(FORM_FIELDS.EMAIL)
-                    || formData.get(FORM_FIELDS.TELEPHONE))
+                && (emailValue || telephoneValue)
                 && formData.get(FORM_FIELDS.PASSWORD)
                 && formData.get(FORM_FIELDS.REPEATED_PASSWORD)
+
+
+            isTelephoneValid = !telephoneValue || /(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})/g.test(telephoneValue)
+            isEmailValid = !emailValue || /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailValue)
         }
     }
 
     const isPasswordsAreEqual = isFormDataFilled && formData.get(FORM_FIELDS.REPEATED_PASSWORD) === formData.get(FORM_FIELDS.PASSWORD);
     return {
         isFormDataFilled,
-        isPasswordsAreEqual
+        isPasswordsAreEqual,
+        isTelephoneValid,
+        isEmailValid
     }
 }
 
@@ -320,7 +342,7 @@ const formSubmit = (e) => {
     const actualType = getPageType();
     const actualButtonId = e.target.id;
     if (actualType === PAGE_TYPES.LOGIN && actualButtonId === PAGE_BUTTONS.LOGIN_BTN) {
-        const { isFormDataFilled} = validateFields(actualType, formData);
+        const {isFormDataFilled} = validateFields(actualType, formData);
         if (!isFormDataFilled) {
             return;
         }
@@ -332,11 +354,25 @@ const formSubmit = (e) => {
     }
     if (actualType === PAGE_TYPES.REGISTER && actualButtonId === PAGE_BUTTONS.REGISTER_BTN) {
         const acceptId = getAcceptId();
-        const { isFormDataFilled, isPasswordsAreEqual} = validateFields(actualType, formData);
+        const {
+            isFormDataFilled,
+            isPasswordsAreEqual,
+            isTelephoneValid,
+            isEmailValid
+        } = validateFields(actualType, formData);
+
         if (!isFormDataFilled) {
-            return
+            return;
         }
         hideRepeatedPasswordError();
+
+        if (!isTelephoneValid || !isEmailValid) {
+            !isEmailValid && highlightFieldWithError(REGISTER_FIELD_WRAPPER_IDS.EMAIL);
+            !isTelephoneValid && highlightFieldWithError(REGISTER_FIELD_WRAPPER_IDS.TELEPHONE);
+
+            displayGeneralError('Введите корректный телефон или email');
+            return;
+        }
         if (acceptId) {
             register(formData)
                 .then(() => {
@@ -368,11 +404,15 @@ const addHandlersToLoginForm = () => {
     registerBtn.addEventListener('click', onRegisterBtnClick);
     registerBtn.addEventListener('click', formSubmit);
 
-    form.addEventListener('change', (e) => {
+    form.addEventListener('input', (e) => {
         const actualType = getPageType()
 
         const formData = new FormData(form);
-        const { isFormDataFilled } = validateFields(actualType, formData);
+        const { isFormDataFilled, isEmailValid, isTelephoneValid} = validateFields(actualType, formData);
+
+        isEmailValid && clearFieldWithError(REGISTER_FIELD_WRAPPER_IDS.EMAIL);
+        isTelephoneValid && clearFieldWithError(REGISTER_FIELD_WRAPPER_IDS.TELEPHONE);
+        isEmailValid && isTelephoneValid && hideGeneralError()
 
         changeHighlightButtonForClick(actualType, isFormDataFilled);
     });

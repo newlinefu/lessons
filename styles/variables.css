@@ -29,10 +29,16 @@
     --input-border-color: var(--secondary-light);
     --input-text-color: var(--primary-text-color);
     --input-active-border-color: var(--accent-color);
+    --input-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --input-error-border-color: var(--error-color);
 
     --sign-in-button-text-color: var(--light-color);
     --sign-in-button-background-color: var(--primary-color);
     --sign-in-button-accent-background-color: var(--accent-color);
+    --sign-in-button-accent-hover-box-shadow: var(--primary-color) 0 5px 10px, rgba(0, 0, 0, 0.05) 0 5px 10px;
+    --sign-in-button-accent-active-background: var(--primary-dark-color);
+    --sign-in-button-subordinate-hover-box-shadow: var(--primary-color) 0 5px 10px, rgba(0, 0, 0, 0.05) 0 5px 10px;
+    --sign-in-button-subordinate-active-background: var(--primary-dark-color);
 
     --normal-button-primary-background-color: var(--accent-color);
     --normal-button-secondary-background-color: var(--primary-color);
@@ -69,6 +75,7 @@
 
     --single-task-title-color: var(--primary-text-color);
     --single-task-item-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    --single-task-hover-border-color: var(--primary-color);
 
     /* end of tasks list */
 
@@ -99,6 +106,9 @@
 
     --course-list-item-task-block-background-color: var(--light-color);
     --course-list-item-task-title-color: var(--primary-text-color);
+
+    --course-list-item-background-color: var(--primary-color);
+    --course-list-item-hover-background-color: var(--accent-color);
 
     /* end of courses list */
 

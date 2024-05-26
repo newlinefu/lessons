@@ -79,9 +79,9 @@ const getAllCourses = ({
         .then(data => {
             return data.filter(d => {
                 const { name, teacher, description, tags } = filters;
-                const isAppliedBySearch = !name || d.name.includes(name);
-                const isAppliedByDescription = !description || d.description.includes(description);
-                const isAppliedByTeacher = !teacher || d.teacher.name.includes(teacher);
+                const isAppliedBySearch = !name || d.name.toLowerCase().includes(name.toLowerCase());
+                const isAppliedByDescription = !description || d.description.toLowerCase().includes(description.toLowerCase());
+                const isAppliedByTeacher = !teacher || d.teacher.name.toLowerCase().includes(teacher.toLowerCase());
                 const isAppliedByTags = !tags?.length || d.tags.some(t => tags.includes(t))
 
                 return isAppliedBySearch && isAppliedByDescription && isAppliedByTeacher && isAppliedByTags;
@@ -163,6 +163,14 @@ const createUserCourse = (course) => {
                 </div>
                 <div class="tags-container">
                     ${tagsHtmlContent}
+                </div>
+                <div class="progress course-progress">
+                    <div class="progress-bar" style="width: ${course.progress}%">
+                        
+                    </div>
+                    <div class="progress-label">
+                        Выполнено: ${course.progress} %
+                    </div>
                 </div>
                 <div class="course-list-item__task">
                     <a class="course-list-item__task-title" href="${TASK_PATH}">

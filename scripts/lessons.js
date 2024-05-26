@@ -75,7 +75,7 @@ const updateLessonsPaginationControls = (page, total) => {
 
 const createHtmlSingleTask = (task) => {
     return `
-        <a href="${LESSON_PATH}?lessonId=${task.id}">
+        <a href="${LESSON_PATH}?lessonId=${task.id}&partId=${task.content[0]?.id}">
             <div class="course-single-task">
                 <h3 class="course-single-task__title">${task.title}</h3>
                 <div class="progress">

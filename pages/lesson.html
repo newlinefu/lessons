@@ -18,24 +18,33 @@
 
     </aside>
     <div class="page-content-block">
-        <h1 class="task-title">ООП: Введение</h1>
+        <h1 class="task-title" id="lesson-title"></h1>
+        <div id="lesson-navigation">
 
+        </div>
+
+        <div class="progress-container" id="part-progress">
+
+        </div>
         <div class="task-content" id="task-content">
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
                     <h2>Видео</h2>
+                    <div class="progress-container" id="video-progress">
+
+                    </div>
                 </div>
-                <div class="collapse-content__content">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="collapse-content__content" id="video-content">
+
                 </div>
             </section>
 
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
                     <h2>Лекция в формате аудио</h2>
+                    <div class="progress-container" id="audio-progress">
+
+                    </div>
                 </div>
                 <div class="collapse-content__content collapsed">
                     <div class="audio-dump">
@@ -47,32 +56,12 @@
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
                     <h2>Текст лекции</h2>
+                    <div class="progress-container" id="lecture-progress">
+
+                    </div>
                 </div>
-                <div class="collapse-content__content collapsed">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, cum debitis earum eligendi
-                    fugit perferendis quae ratione reprehenderit totam. Aspernatur earum facere maiores odit porro
-                    quaerat quidem reiciendis sequi? <br>
+                <div class="collapse-content__content collapsed" id="lecture-text">
+
                 </div>
             </section>
 
@@ -81,23 +70,8 @@
                     <h2 class="collapse-content__header-text">Дополнительные материалы к занятию</h2>
                 </div>
                 <div class="collapse-content__content collapsed">
-                    <div class="files-container">
-                        <div class="single-file">
-                            <div class="single-file__icon">
+                    <div class="files-container" id="files-container">
 
-                            </div>
-                            <div class="single-file__name">
-                                Part_1.pdf
-                            </div>
-                        </div>
-                        <div class="single-file">
-                            <div class="single-file__icon">
-
-                            </div>
-                            <div class="single-file__name">
-                                Part_2.pdf
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -105,54 +79,13 @@
             <section class="collapsed-content">
                 <div class="collapse-content__header primary">
                     <h2>Проверь свои знания по материалу</h2>
+                    <div class="progress-container" id="test-progress">
+
+                    </div>
                 </div>
                 <div class="collapse-content__content">
-                    <form action="" class="task-test">
-                        <fieldset id="q1" name="q1" class="task-test__question">
-                            <h3 class="task-test__question-text">
-                                Question
-                            </h3>
+                    <form action="" class="task-test" id="test-form">
 
-                            <div class="task-test__question-answer">
-                                <input type="radio" id="q1-ans-1" name="q1-ans" value="q1-ans-1"/>
-                                <label for="q1-ans-1" class="task-test__question-answer-label">Ответ 1</label>
-                            </div>
-
-                            <div class="task-test__question-answer">
-                                <input type="radio" id="q1-ans-2" name="q1-ans" value="q1-ans-2"/>
-                                <label for="q1-ans-2" class="task-test__question-answer-label">Ответ 2</label>
-                            </div>
-
-                            <div class="task-test__question-answer">
-                                <input type="radio" id="q1-ans-3" name="q1-ans" value="q1-ans-3"/>
-                                <label for="q1-ans-3" class="task-test__question-answer-label">Ответ 3</label>
-                            </div>
-                        </fieldset>
-                        <fieldset id="q2" name="q2" class="task-test__question">
-                            <h3 style="color: black" class="task-test__question-text">
-                                Question
-                            </h3>
-
-                            <div class="task-test__question-answer">
-                                <input type="radio" name="q2-ans" id="q2-ans-1" value="q2-ans-1"/>
-                                <label for="q2-ans-1" class="task-test__question-answer-label">Ответ 1</label>
-                            </div>
-
-                            <div class="task-test__question-answer">
-                                <input type="radio" name="q2-ans" id="q2-ans-2" value="q2-ans-2"/>
-                                <label for="q2-ans-2" class="task-test__question-answer-label">Ответ 2</label>
-                            </div>
-
-                            <div class="task-test__question-answer">
-                                <input type="radio" name="q2-ans" id="q2-ans-3" value="q2-ans-3"/>
-                                <label for="q2-ans-3" class="task-test__question-answer-label">Ответ 3</label>
-                            </div>
-                        </fieldset>
-                        <div class="submit-test-btn__wrapper">
-                            <button class="submit-test-btn primary">
-                                Отправить
-                            </button>
-                        </div>
                     </form>
                 </div>
             </section>
@@ -162,13 +95,8 @@
                     <h2>Задание к занятию</h2>
                 </div>
                 <div class="collapse-content__content collapsed">
-                    <p class="homework-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa dolores eos est
-                        exercitationem
-                        libero maxime natus necessitatibus odit officia optio praesentium quidem quisquam ratione
-                        reiciendis
-                        tempora
-                        tenetur voluptatem, voluptatibus.
+                    <p class="homework-text" id="homework-text">
+
                     </p>
                     <div class="homework-file-upload">
                         <label for="homework-file-input" class="homework-input-label">

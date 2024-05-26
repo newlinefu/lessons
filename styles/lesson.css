@@ -5,6 +5,12 @@
     margin-top: 40px;
 }
 
+.part-title {
+    color: #212121;
+    text-align: center;
+    padding: 10px;
+}
+
 .collapsed-content {
     padding: 10px;
 }
@@ -107,6 +113,47 @@
 
 .homework-file-upload {
     margin-top: 20px;
+}
+
+.progress.part-section-progress:not(.lesson-section) {
+    margin-left: 10px;
+}
+
+.lesson-section > .progress-label {
+    color: var(--light-color);
+}
+
+.lesson-navigation__controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lesson-navigation__items {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 0 10px 0;
+}
+
+.lesson-part-navigation-item {
+    color: var(--secondary-text-color);
+    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: padding-left 0.3s ease;
+}
+
+.lesson-part-navigation-item:hover {
+    padding-left: 20px;
+    background-color: var(--secondary-text-color);
+    color: var(--light-color);
+}
+
+.lesson-part-navigation-item.active {
+    color: var(--light-color);
+    padding-left: 20px;
+    background-color: var(--accent-color);
 }
 
 @media screen and (max-width: 680px) {

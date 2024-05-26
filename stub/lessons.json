@@ -4,784 +4,2593 @@
     "courseId": "1",
     "title": "Урок 1",
     "progress": 70,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "1",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "2",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "3",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "4",
+        "progress": 99,
+        "name": "Часть 4",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "2",
     "courseId": "1",
     "title": "Урок 2",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "5",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "6",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "7",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "3",
     "courseId": "1",
     "title": "Урок 3",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "8",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "9",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "4",
     "courseId": "1",
     "title": "Урок 4",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "10",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "11",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
-
-
-
   {
     "id": "5",
     "courseId": "2",
     "title": "Урок 1",
     "progress": 100,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "12",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "13",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "14",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "6",
     "courseId": "2",
     "title": "Урок 2",
     "progress": 10,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "15",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "16",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "17",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "18",
+        "progress": 99,
+        "name": "Часть 4",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "7",
     "courseId": "2",
     "title": "Урок 3",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "19",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "20",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "8",
     "courseId": "2",
     "title": "Урок 4",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "21",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "22",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
-
-
-
   {
     "id": "9",
     "courseId": "3",
     "title": "Урок 1",
     "progress": 100,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "23",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "24",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "25",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "10",
     "courseId": "3",
     "title": "Урок 2",
     "progress": 33,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "26",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
       }
-    }
+    ]
   },
-
-
-
   {
     "id": "11",
     "courseId": "4",
     "title": "Урок 1",
     "progress": 100,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "27",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "28",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "29",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "30",
+        "progress": 99,
+        "name": "Часть 4",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "12",
     "courseId": "4",
     "title": "Урок 2",
     "progress": 100,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "31",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "32",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "13",
     "courseId": "4",
     "title": "Урок 3",
     "progress": 44,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "33",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "34",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "14",
     "courseId": "4",
     "title": "Урок 4",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "35",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "36",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "37",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
-
-
   {
     "id": "15",
     "courseId": "5",
     "title": "Урок 1",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "35",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
       }
-    }
+    ]
   },
   {
     "id": "16",
     "courseId": "5",
     "title": "Урок 2",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "36",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "37",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "38",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "17",
     "courseId": "5",
     "title": "Урок 3",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "39",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "40",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "41",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "42",
+        "progress": 99,
+        "name": "Часть 4",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   },
   {
     "id": "18",
     "courseId": "5",
     "title": "Урок 4",
     "progress": 0,
-    "content": {
-      "video": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
-      "audio": "",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
-      "files": [
-        {
-          "name": "File_1.pdf",
-          "link": "/lessons/static/file_1.pdf"
+    "content": [
+      {
+        "id": "43",
+        "progress": 99,
+        "name": "Часть 1",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
         },
-        {
-          "name": "File_2.pdf",
-          "link": "/lessons/static/file_1.pdf"
-        }
-      ],
-      "test": [
-        {
-          "title": "Вопрос 1",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3",
-            "Ответ 4"
-          ]
+        "audio": {
+          "url": "",
+          "progress": 10
         },
-        {
-          "title": "Вопрос 2",
-          "ans": [
-            "Ответ 1",
-            "Ответ 2",
-            "Ответ 3"
-          ]
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
         }
-      ],
-      "homework": {
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+      },
+      {
+        "id": "44",
+        "progress": 99,
+        "name": "Часть 2",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "45",
+        "progress": 99,
+        "name": "Часть 3",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
+      },
+      {
+        "id": "46",
+        "progress": 99,
+        "name": "Часть 4",
+        "video": {
+          "url": "https://www.youtube.com/embed/jPlBifPPri8?si=1ZoFBTBQND1UEBBN",
+          "progress": 30
+        },
+        "audio": {
+          "url": "",
+          "progress": 10
+        },
+        "text": {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!",
+          "progress": 5
+        },
+        "files": [
+          {
+            "name": "File_1.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          },
+          {
+            "name": "File_2.pdf",
+            "link": "/lessons/static/file_1.pdf"
+          }
+        ],
+        "testProgress": 80,
+        "test": [
+          {
+            "title": "Вопрос 1",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3",
+              "Ответ 4"
+            ]
+          },
+          {
+            "title": "Вопрос 2",
+            "ans": [
+              "Ответ 1",
+              "Ответ 2",
+              "Ответ 3"
+            ]
+          }
+        ],
+        "homework": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+        }
       }
-    }
+    ]
   }
 ]

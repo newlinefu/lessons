@@ -11,6 +11,7 @@
       "Менеджмент"
     ],
     "img": "/lessons/static/course-img.jpg",
+    "progress": 78,
     "lastTask": {
       "id": "1"
     },
@@ -26,8 +27,10 @@
     "img": "/lessons/static/course-img.jpg",
     "tags": [
       "Программирование",
-      "ООП"
+      "ООП",
+      "C#"
     ],
+    "progress": 33,
     "lastTask": {
       "id": "6"
     },
@@ -42,10 +45,12 @@
     },
     "img": "/lessons/static/course-img.jpg",
     "tags": [
-      "Программирование",
-      "ООП",
-      "Классы"
+      "Структуры данных",
+      "Gradle",
+      "Maven",
+      "Java"
     ],
+    "progress": 25,
     "lastTask": {
       "id": "10"
     },
@@ -61,8 +66,11 @@
     "img": "/lessons/static/course-img.jpg",
     "tags": [
       "Программирование",
-      "ООП"
+      "ООП",
+      "Структуры данных",
+      "Java"
     ],
+    "progress": 13,
     "lastTask": {
       "id": "13"
     },

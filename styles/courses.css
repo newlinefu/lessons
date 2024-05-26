@@ -30,6 +30,14 @@
     transition: background-color 0.3s ease;
 }
 
+.course-progress > .progress-label {
+    color: var(--light-color);
+}
+
+.course-list-item:hover .course-progress > .progress-bar {
+    background-color: var(--primary-color);
+}
+
 .course-list-item:hover {
     background-color: var(--course-list-item-hover-background-color);
 }

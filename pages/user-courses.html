@@ -20,7 +20,7 @@
     <div class="page-content-block">
         <div class="courses-list">
             <div class="courses-list__search">
-                <input type="text" placeholder="Какой курс Вы хотите найти?">
+                <input type="text" placeholder="Какой курс Вы хотите найти?" id="courses-search-input">
                 <button id="courses-list__search-filters-btn" class="secondary">
                     Фильтры
                 </button>
@@ -28,8 +28,10 @@
                     Найти
                 </button>
             </div>
-            <div class="courses-list__filters">
+            <div class="courses-list__filters hidden" id="course-filters-container">
+                <form action="" id="course-filters">
 
+                </form>
             </div>
             <div class="courses-list__courses" id="courses-container">
 

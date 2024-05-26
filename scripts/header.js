@@ -117,7 +117,7 @@ const createAnnouncementInformation = (announcement) => {
 
 const createTestInformation = (test) => {
     return `
-        <div class="summary-information__item primary">
+        <div class="summary-information__item">
             <p class="summary-information__item-title">
                 ${test.courseName}
             </p>

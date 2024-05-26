@@ -50,6 +50,10 @@ a {
     color: inherit;
 }
 
+input[type='checkbox'] {
+    zoom: 1.5;
+}
+
 input[type='text'],
 input[type='number'],
 input[type='email'],

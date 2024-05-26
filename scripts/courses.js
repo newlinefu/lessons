@@ -20,8 +20,6 @@ const getCoursesPageFromUrl = () => {
 };
 
 const getUserCourses = ({
-                            type,
-                            search = '',
                             filters = {},
                             page = 1
                         }) => {
@@ -29,7 +27,17 @@ const getUserCourses = ({
     const takenIndexes = new Array(COURSES_PAGE_SIZE).fill(undefined).map((_, idx) => COURSES_PAGE_SIZE * (Number(page) - 1) + idx);
     return fetch(`${PATH_TO_STUB}/user-courses.json`)
         .then(response => response.json())
-        .then(data => data)
+        .then(data => {
+            return data.filter(d => {
+                const { name, teacher, description, tags } = filters;
+                const isAppliedBySearch = !name || d.name.toLowerCase().includes(name.toLowerCase());
+                const isAppliedByDescription = !description || d.description.toLowerCase().includes(description.toLowerCase());
+                const isAppliedByTeacher = !teacher || d.teacher.name.toLowerCase().includes(teacher.toLowerCase());
+                const isAppliedByTags = !tags?.length || d.tags.some(t => tags.includes(t))
+
+                return isAppliedBySearch && isAppliedByDescription && isAppliedByTeacher && isAppliedByTags;
+            })
+        })
         .then(coursesData => {
             const enrichedCoursesData = [...coursesData];
             const promises = [];
@@ -61,8 +69,6 @@ const getUserCourses = ({
 }
 
 const getAllCourses = ({
-                           type,
-                           search = '',
                            filters = {},
                            page = 1
                        }) => {
@@ -70,7 +76,17 @@ const getAllCourses = ({
     const takenIndexes = new Array(COURSES_PAGE_SIZE).fill(undefined).map((_, idx) => COURSES_PAGE_SIZE * (Number(page) - 1) + idx);
     return fetch(`${PATH_TO_STUB}/all-courses.json`)
         .then(response => response.json())
-        .then(data => data)
+        .then(data => {
+            return data.filter(d => {
+                const { name, teacher, description, tags } = filters;
+                const isAppliedBySearch = !name || d.name.includes(name);
+                const isAppliedByDescription = !description || d.description.includes(description);
+                const isAppliedByTeacher = !teacher || d.teacher.name.includes(teacher);
+                const isAppliedByTags = !tags?.length || d.tags.some(t => tags.includes(t))
+
+                return isAppliedBySearch && isAppliedByDescription && isAppliedByTeacher && isAppliedByTags;
+            })
+        })
         .then(coursesData => {
             const enrichedCoursesData = [...coursesData];
             const promises = [];
@@ -224,7 +240,14 @@ const createCoursesList = (payload) => {
 
     return getCourses(payload)
         .then(({courses, total}) => {
-            coursesContainer.innerHTML = courses.reduce((acc, course) => acc + createHtmlCourse(payload.type, course), '');
+
+            coursesContainer.innerHTML = total
+                ? courses.reduce((acc, course) => acc + createHtmlCourse(payload.type, course), '')
+                : `
+                    <h2 class="not-found-label">
+                        Ничего не найдено =(
+                    </h2>
+                `
             return { courses, total }
         })
         .then((coursesPayload) => coursesPayload)
@@ -236,7 +259,14 @@ const updateCoursesPaginationControls = (page, total) => {
     const pageTotalLabel = document.getElementById('pagination-total');
     const actualPageLabel = document.getElementById('pagination-actual-page');
 
+    const container = document.getElementById('pagination-container');
+
     const totalPages = Math.ceil(total / COURSES_PAGE_SIZE);
+    if (totalPages === 0) {
+        container.style.visibility = 'hidden';
+    } else {
+        container.style.visibility = 'visible';
+    }
     pageTotalLabel.innerHTML = totalPages;
     actualPageLabel.innerHTML = page;
     if (page === 1) {
@@ -255,35 +285,108 @@ const updateCoursesPaginationControls = (page, total) => {
     }
 }
 
-const changeCoursesPage = (page) => {
-    insertCoursesPageToUrl(page);
+const getFiltersConfig = (actualPage, applyFilters = false) => {
     const coursesType = definePageCoursesType();
-    const actualPage = Number(page) || 1
-    const payload = {
+    const form = document.getElementById('course-filters');
+    const formData = new FormData(form);
+
+    const searchInput = document.getElementById('courses-search-input');
+
+    const searchValue = searchInput?.value;
+    const descriptionValue = formData.get('description');
+    const teacherValue =  formData.get('teacher');
+    const tagsValue = formData.getAll('tags');
+    console.log({
+        name: searchValue,
+        description: descriptionValue,
+        teacher: teacherValue,
+        tags: tagsValue
+    })
+    return {
         type: coursesType,
-        search: '',
-        filters: {},
+        filters: applyFilters ? {
+            name: searchValue,
+            description: descriptionValue,
+            teacher: teacherValue,
+            tags: tagsValue
+        } : {},
         page: actualPage
     }
+}
+
+const changeCoursesPage = (page, applyFilters = false) => {
+    insertCoursesPageToUrl(page);
+    const actualPage = Number(page) || 1
+    const payload = getFiltersConfig(actualPage, applyFilters);
     createCoursesList(payload)
         .then(coursesPayload => {
             updateCoursesPaginationControls(actualPage, coursesPayload.total);
         })
 }
 
+const createFiltersContent = () => {
+    const filtersForm = document.getElementById('course-filters');
+    let htmlContent = `
+        <div class="courses-list__filters-row">
+            <input type="text" name="description" placeholder="Описание">
+            <input type="text" placeholder="Преподаватель" name="teacher">
+        </div>
+    `
+    const tags = [
+        'Структуры данных',
+        'Gradle',
+        'Maven',
+        'Java',
+        'Программирование',
+        'ООП',
+        'C#',
+        'Чистота',
+        'Бухгалтерия',
+        'Менеджмент'
+    ]
+    const htmlTagsSelectors = tags.reduce((acc, tag) => {
+        return acc + `
+            <div class="courses-list__filters-tags-option">
+                <input type="checkbox" name="tags" value="${tag}">
+                <div>
+                    ${tag}
+                </div>
+            </div>
+        `
+    }, '');
+
+    htmlContent += `
+        <div class="courses-list__filters-tags">
+            ${htmlTagsSelectors}
+        </div>
+    `;
+    filtersForm.innerHTML = htmlContent;
+}
+
+
+
+const toggleFiltrationBlock = () => {
+    const filtersBtn = document.getElementById('course-filters-container');
+    filtersBtn.classList.toggle('hidden');
+}
+
 const initCoursesList = () => {
+    const filtersBtn = document.getElementById('courses-list__search-filters-btn');
+    filtersBtn.addEventListener('click', toggleFiltrationBlock);
+
+    const searchBtn = document.getElementById('courses-list__search-submit-btn');
+    searchBtn.addEventListener('click', () => {
+        changeCoursesPage(1, true)
+    });
+
+
     const page = getCoursesPageFromUrl();
+    createFiltersContent();
     if (!page) {
         insertCoursesPageToUrl(1)
     }
-    const coursesType = definePageCoursesType();
     const actualPage = Number(page) || 1
-    const payload = {
-        type: coursesType,
-        search: '',
-        filters: {},
-        page: actualPage
-    }
+    const payload = getFiltersConfig(actualPage);
     createCoursesList(payload)
         .then(coursesPayload => {
             createCoursesPagination();

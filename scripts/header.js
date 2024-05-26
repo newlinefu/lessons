@@ -2,7 +2,7 @@ const ALL_COURSES_PATH = '/lessons/pages/all-courses.html';
 const LOGIN_PATH = '/lessons/pages/login.html';
 const PROFILE_PATH = '/lessons/pages/profile.html';
 const USER_COURSES_PATH = '/lessons/pages/user-courses.html';
-
+const SINGLE_HEADER_COURSE_PATH = '/lessons/pages/course.html';
 const MENU_ICON_PATH = '/lessons/static/burger-icon.svg';
 
 window.getCookie = function (name) {
@@ -175,15 +175,16 @@ const fillAsideContent = () => {
         let asideContent = '';
         data.forEach(item => {
             const type = item.type;
+            const {courseId} = item;
             switch (type) {
                 case 'announcement':
-                    asideContent += createAnnouncementInformation(item);
+                    asideContent += `<a href="${SINGLE_HEADER_COURSE_PATH}?courseId=${courseId}&userCourse=true">${createAnnouncementInformation(item)}</a>`;
                     break;
                 case 'test':
-                    asideContent += createTestInformation(item);
+                    asideContent += `<a href="${SINGLE_HEADER_COURSE_PATH}?courseId=${courseId}&userCourse=true">${createTestInformation(item)}</a>`;
                     break;
                 case 'reminder':
-                    asideContent += createReminderInformation(item);
+                    asideContent += `<a href="${SINGLE_HEADER_COURSE_PATH}?courseId=${courseId}&userCourse=true">${createReminderInformation(item)}</a>`;
                     break;
                 default:
                     break;

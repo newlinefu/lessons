@@ -1,7 +1,7 @@
 [
   {
     "courseId": "1",
-    "courseName": "Java: Beginner",
+    "courseName": "Что-то про 1С",
     "type": "announcement",
     "announcement": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
   },
@@ -13,20 +13,22 @@
   },
   {
     "courseId": "3",
-    "courseName": "Что-то про 1С",
+    "courseName": "Java: Advanced",
     "type": "reminder",
     "tasks": [
       {
-        "title": "Введение",
+        "title": "Урок 1",
         "tags": [
-          "Бухгалтерия",
-          "Менеджмент"
+          "Программирование",
+          "ООП"
         ]
       },
       {
-        "title": "Настройка окружения",
+        "title": "Урок 2",
         "tags": [
-          "1С"
+          "Программирование",
+          "ООП",
+          "Классы"
         ]
       }
     ]

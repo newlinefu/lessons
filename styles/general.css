@@ -224,8 +224,11 @@ button.primary {
 .pagination__page-label {
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+}
+.pagination__page-label,
+.pagination__page-label > span {
     color: var(--pagination-page-label-text-color);
     font-weight: bold;
 }

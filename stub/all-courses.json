@@ -23,7 +23,8 @@
     },
     "tags": [
       "Программирование",
-      "ООП"
+      "ООП",
+      "C#"
     ],
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
   },
@@ -38,7 +39,37 @@
     "tags": [
       "Программирование",
       "ООП",
-      "Стуктуры данных"
+      "Стуктуры данных",
+      "Java"
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "id": "4",
+    "name": "Java: Advanced",
+    "img": "/lessons/static/course-img.jpg",
+    "teacher": {
+      "id": "4",
+      "name": "Захаров К. Е."
+    },
+    "tags": [
+      "Стуктуры данных",
+      "Gradle",
+      "Maven",
+      "Java"
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "id": "5",
+    "name": "Английский язык для уборщиков Google",
+    "img": "/lessons/static/course-img.jpg",
+    "teacher": {
+      "id": "5",
+      "name": "Прохоров Ю. А."
+    },
+    "tags": [
+      "Чистота"
     ],
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
   }

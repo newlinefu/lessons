@@ -43,6 +43,39 @@
     text-align: center;
 }
 
+.lessons-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.lessons-preview__title {
+    color: var(--primary-dark-color);
+}
+
+.lessons-preview-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lessons-preview__lesson {
+    border-radius: 4px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: var(--primary-dark-color);
+    max-width: 50%;
+    font-weight: bold;
+}
+
+.lessons-preview__lesson:hover {
+    background-color: var(--primary-dark-color);
+    color: var(--light-color);
+}
+
+
+
 
 @media screen and (max-width: 680px) {
     .single-course-general-information {

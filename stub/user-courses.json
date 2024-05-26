@@ -12,16 +12,16 @@
     ],
     "img": "/lessons/static/course-img.jpg",
     "lastTask": {
-      "title": "Настройка окружения",
-      "progress": 70
-    }
+      "id": "1"
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
   },
   {
     "id": "2",
     "name": "C# для чайников",
     "teacher": {
       "id": "2",
-      "name": "Симонов А. М."
+      "name": "Захаров К. Е."
     },
     "img": "/lessons/static/course-img.jpg",
     "tags": [
@@ -29,8 +29,43 @@
       "ООП"
     ],
     "lastTask": {
-      "title": "Методы и функции",
-      "progress": 10
-    }
+      "id": "6"
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "id": "3",
+    "name": "Java: Advanced",
+    "teacher": {
+      "id": "3",
+      "name": "Максимов Е. К."
+    },
+    "img": "/lessons/static/course-img.jpg",
+    "tags": [
+      "Программирование",
+      "ООП",
+      "Классы"
+    ],
+    "lastTask": {
+      "id": "10"
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
+  },
+  {
+    "id": "4",
+    "name": "Java: Advanced",
+    "teacher": {
+      "id": "4",
+      "name": "Захаров К. Е."
+    },
+    "img": "/lessons/static/course-img.jpg",
+    "tags": [
+      "Программирование",
+      "ООП"
+    ],
+    "lastTask": {
+      "id": "13"
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid beatae dignissimos dolor exercitationem impedit ipsam minus modi necessitatibus nostrum omnis quaerat, quasi quia quisquam ratione, rerum sequi sunt vel!"
   }
 ]

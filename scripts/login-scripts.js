@@ -208,7 +208,7 @@ const onRegisterBtnClick = () => {
 
 const displayGeneralError = (errorText) => {
     const error = document.getElementById('form-general-error');
-    error.innerText = errorText || GENERAL_ERROR_TEXT;
+    error.innerText = errorText || '';
 }
 
 const highlightFieldWithError = (fieldWrapperId) => {
@@ -217,11 +217,6 @@ const highlightFieldWithError = (fieldWrapperId) => {
 
 const clearFieldWithError = (fieldWrapperId) => {
     document.querySelector('#' + fieldWrapperId + ' > input').classList.remove('error');
-}
-
-const hideGeneralError = () => {
-    const error = document.getElementById('form-general-error');
-    error.innerText = '';
 }
 
 const displayRepeatedPasswordError = (errorText) => {
@@ -246,6 +241,14 @@ const hideLoginError = () => {
     error.innerText = '';
 }
 
+const isTelValueValid = (value) => {
+    if (!value) {
+        return true;
+    }
+    const regex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+    return regex.test(value);
+}
 const validateFields = (pageType, formData) => {
     let isFormDataFilled = false;
     let isTelephoneValid = true;
@@ -272,7 +275,7 @@ const validateFields = (pageType, formData) => {
                 && formData.get(FORM_FIELDS.REPEATED_PASSWORD)
 
 
-            isTelephoneValid = !telephoneValue || /(\+7|8)[- _]*\(?[- _]*(\d{3}[- _]*\)?([- _]*\d){7}|\d\d[- _]*\d\d[- _]*\)?([- _]*\d){6})/g.test(telephoneValue)
+            isTelephoneValid = isTelValueValid(telephoneValue)
             isEmailValid = !emailValue || /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(emailValue)
         }
     }
@@ -286,11 +289,26 @@ const validateFields = (pageType, formData) => {
     }
 }
 
-function setCookie(cName, cValue, expDays) {
+const setCookie = (cName, cValue, expDays) => {
     let date = new Date();
     date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
     const expires = "expires=" + date.toUTCString();
     document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+}
+
+const createValidationError = (isEmailValid, isTelephoneValid) => {
+    let result = '';
+    if (!isEmailValid) {
+        result = 'Некорректный еmail. Введите корректное значение'
+    }
+    if (!isTelephoneValid) {
+        if (result) {
+            result = 'Некорректные еmail и телефон. Введите корректные значение'
+        } else {
+            result = 'Некорректный телефон. Введите корректное значение'
+        }
+    }
+    return result;
 }
 
 // add login logic here
@@ -366,11 +384,12 @@ const formSubmit = (e) => {
         }
         hideRepeatedPasswordError();
 
-        if (!isTelephoneValid || !isEmailValid) {
-            !isEmailValid && highlightFieldWithError(REGISTER_FIELD_WRAPPER_IDS.EMAIL);
-            !isTelephoneValid && highlightFieldWithError(REGISTER_FIELD_WRAPPER_IDS.TELEPHONE);
+        const validationError = createValidationError(isEmailValid, isTelephoneValid);
+        !isEmailValid && highlightFieldWithError(REGISTER_FIELD_WRAPPER_IDS.EMAIL);
+        !isTelephoneValid && highlightFieldWithError(REGISTER_FIELD_WRAPPER_IDS.TELEPHONE);
+        displayGeneralError(validationError);
 
-            displayGeneralError('Введите корректный телефон или email');
+        if (!isTelephoneValid || !isEmailValid) {
             return;
         }
         if (acceptId) {
@@ -412,7 +431,9 @@ const addHandlersToLoginForm = () => {
 
         isEmailValid && clearFieldWithError(REGISTER_FIELD_WRAPPER_IDS.EMAIL);
         isTelephoneValid && clearFieldWithError(REGISTER_FIELD_WRAPPER_IDS.TELEPHONE);
-        isEmailValid && isTelephoneValid && hideGeneralError()
+
+        const error = createValidationError(isEmailValid, isTelephoneValid)
+        displayGeneralError(error);
 
         changeHighlightButtonForClick(actualType, isFormDataFilled);
     });

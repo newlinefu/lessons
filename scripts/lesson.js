@@ -100,8 +100,13 @@ const createTestHtml = (test) => {
         question.ans.forEach((answer, aIdx) => {
             answers += `
                 <div class="task-test__question-answer">
-                     <input type="radio" id="q${qIdx}-ans-${aIdx}" name="q${qIdx}-ans" value="q${qIdx}-ans-${aIdx}"/>
-                     <label htmlFor="q${qIdx}-ans-${aIdx}" class="task-test__question-answer-label">${answer}</label>
+                    <div class="checkbox-wrapper inline">
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="q${qIdx}-ans" value="q${qIdx}-ans-${aIdx}"/>
+                            <span class="checkbox__label"></span>
+                            ${answer}
+                        </label>
+                    </div>
                  </div>
             `
         })
@@ -214,7 +219,7 @@ const enrichNavigationControls = (lessonId, partId, nextPartId, prevPartId, next
     }
 }
 
-const initPage = () => {
+const initLessonsPage = () => {
     addClicksListeners();
 
     const lessonId = getLessonIdFromUrlId();
@@ -222,7 +227,6 @@ const initPage = () => {
 
     getLessonParts(lessonId)
         .then(parts => {
-            console.log(parts)
             createLessonNavigation(parts, partId, lessonId)
         })
     getLessonPartContent(lessonId, partId)
@@ -240,5 +244,5 @@ const initPage = () => {
         })
 }
 
-initPage();
+initLessonsPage();
 

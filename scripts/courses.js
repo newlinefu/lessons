@@ -355,9 +355,12 @@ const createFiltersContent = () => {
     const htmlTagsSelectors = tags.reduce((acc, tag) => {
         return acc + `
             <div class="courses-list__filters-tags-option">
-                <input type="checkbox" name="tags" value="${tag}">
-                <div>
+                <div class="checkbox-wrapper">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" name="tags" value="${tag}"/>
+                        <span class="checkbox__label"></span>
                     ${tag}
+                    </label>
                 </div>
             </div>
         `

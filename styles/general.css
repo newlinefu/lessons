@@ -278,6 +278,95 @@ h3 {
 }
 
 
+/* CHECKBOXES */
+
+
+ .checkbox-wrapper {
+     --size: 1rem;
+     --background: #fff;
+     font-size: var(--size);
+ }
+
+.checkbox-wrapper *,
+.checkbox-wrapper *::after,
+.checkbox-wrapper *::before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox-wrapper .checkbox__label {
+    width: var(--size);
+}
+
+.checkbox-wrapper .checkbox__label:before {
+    content: ' ';
+    display: block;
+    height: var(--size);
+    width: var(--size);
+    position: absolute;
+    top: calc(var(--size) * 0.125);
+    left: 0;
+    background: var(--background);
+}
+
+.checkbox-wrapper .checkbox__label:after {
+    content: ' ';
+    display: block;
+    height: var(--size);
+    width: var(--size);
+    border: calc(var(--size) * .14) solid transparent;
+    transition: 200ms;
+    position: absolute;
+    top: calc(var(--size) * 0.125);
+    left: 0;
+    background: var(--background);
+}
+
+.checkbox-wrapper.inline .checkbox__label:after {
+    border: calc(var(--size) * .14) solid var(--primary-dark-color);
+}
+
+.checkbox-wrapper .checkbox__label:after {
+    transition: 100ms ease-in-out;
+}
+
+.checkbox-wrapper .checkbox__input:checked ~ .checkbox__label:after {
+    border-top-style: none;
+    border-right-style: none;
+    -ms-transform: rotate(-45deg); /* IE9 */
+    transform: rotate(-45deg);
+    height: calc(var(--size) * .5);
+    background-color: transparent;
+    border-color: var(--primary-dark-color);
+}
+
+.checkbox-wrapper .checkbox {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    /* Mobile Safari: */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.checkbox-wrapper .checkbox__label:after:hover,
+.checkbox-wrapper .checkbox__label:after:active {
+    border-color: var(--primary-dark-color);
+}
+
+.checkbox-wrapper .checkbox__label {
+    margin-right: calc(var(--size) * 0.45);
+}
+
+.checkbox-wrapper.inline label {
+    color: var(--primary-dark-color);
+}
+
+/* CHECKBOXES */
+
 @media screen and (max-width: 1100px) {
     * {
         font-size: 14px;

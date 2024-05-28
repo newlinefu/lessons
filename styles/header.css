@@ -29,6 +29,7 @@
     height: 100%;
     position: relative;
     padding: 0 20px;
+    cursor: pointer;
 }
 
 .link-header-control:hover {
@@ -140,6 +141,21 @@
     gap: 5px;
     flex-wrap: wrap;
     padding: 5px;
+}
+
+#header-menu-btn {
+    position: relative;
+}
+
+#menu-click-area {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+}
+
+#menu-click-area.hidden {
+    width: 0;
 }
 
 

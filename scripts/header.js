@@ -5,9 +5,17 @@ const USER_COURSES_PATH = '/lessons/pages/user-courses.html';
 const SINGLE_HEADER_COURSE_PATH = '/lessons/pages/course.html';
 const MENU_ICON_PATH = '/lessons/static/burger-icon.svg';
 
-window.getCookie = function (name) {
+window.getCookie = (name) => {
     const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
     if (match) return match[2];
+}
+
+window.deleteCookie = (name) => {
+    const d = new Date();
+    d.setDate(d.getDate() - 1);
+    const expires = ";expires=" + d;
+    const value = "";
+    document.cookie = name + "=" + value + expires + "; path=/";
 }
 
 const createMainHeader = () => {
@@ -32,6 +40,9 @@ const createMainHeader = () => {
             <div class="site-header__single-control link-header-control">
                 <div class="site-header__menu-btn" id="header-menu-btn">
                     <img src="${MENU_ICON_PATH}" alt="Меню" width="20" height="20">
+                    <div id="menu-click-area">
+                    
+                    </div>
                 </div>
             </div>
             <div class="site-header__single-control link-header-control">
@@ -44,6 +55,9 @@ const createMainHeader = () => {
         <div class="site-header__controls header-right-controls">
             <div class="site-header__single-control link-header-control">
                 <a href="${PROFILE_PATH}" class="link">Мой профиль</a>
+            </div>
+            <div class="site-header__single-control link-header-control" id="log-out-btn">
+               Выйти
             </div>
         </div>
     `;
@@ -77,18 +91,30 @@ const createHeader = () => {
 const onMenuClick = () => {
     const aside = document.querySelector('aside');
     const headerMenuBtn = document.getElementById('header-menu-btn');
-    const menuWrapper = headerMenuBtn.closest('.link-header-control')
+    const menuWrapper = headerMenuBtn.closest('.link-header-control');
+    const clickArea =  document.getElementById('menu-click-area');
 
     aside.classList.toggle('opened');
+    clickArea.classList.toggle('hidden');
     if (menuWrapper) {
-        menuWrapper.classList.toggle('accent')
+        menuWrapper.classList.toggle('accent');
     }
 }
 
+
+
 const addHeaderListeners = () => {
     const menuBtn = document.getElementById('header-menu-btn');
+    const logOutBtn = document.getElementById('log-out-btn');
+
     if (menuBtn) {
         menuBtn.addEventListener('click', onMenuClick);
+    }
+    if (logOutBtn) {
+        logOutBtn.addEventListener('click', () => {
+            window.deleteCookie('access-token');
+            window.location.href = `/lessons/pages/all-courses.html`;
+        })
     }
 }
 
@@ -146,14 +172,16 @@ const createReminderInformation = (reminder) => {
         });
 
         tasksInformation += `
-            <div class="summary-information__item-content">
-                <p class="divided">
-                    ${task.title}
-                </p>
-                <div class="tags-container">
-                    ${tagsInformation}
+            <a href="/lessons/pages/lesson.html?lessonId=${task.id}&partId=${task.startPartId}">
+                <div class="summary-information__item-content">
+                    <p class="divided">
+                        ${task.title}
+                    </p>
+                    <div class="tags-container">
+                        ${tagsInformation}
+                    </div>
                 </div>
-            </div>
+            </a>
         `
     });
 
@@ -195,7 +223,11 @@ const fillAsideContent = () => {
     })
 }
 
+const initHeaderPage = () => {
+    createHeader();
+    addHeaderListeners();
+    fillAsideContent();
+}
 
-createHeader();
-addHeaderListeners();
-fillAsideContent();
+initHeaderPage();
+
